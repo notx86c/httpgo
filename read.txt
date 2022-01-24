@@ -1,0 +1,24 @@
+ulimit -n 999999
+- [x] HTTP Get Flood
+- [x] HTTP Post Flood
+- [x] Random url(http get flood)
+- [x] Self edit header(You can use "nil" to use default header)
+- [x] Improved threading control
+- [x] More powerful flood
+- [x] Auto get ip form domain(golang inbuilt function)
+- [x] More format for random url(http get flood)- [x] Fixed for 386 systems
+ -----------------------------------------------------
+ Default header setting:
+ - [x] Random user-agents
+ - [x] Random data(http post flood) 
+ - [x] Random Accpetall
+ - [x] Random Referer(only for http get flood)
+
+Header.txt format:
+
+    Accept: text/html
+    User-agent: Wget
+    Referer: http://google.com
+
+   go build httpflood.go
+    ./httpflood  <url> <threads> <get/post> <seconds> <header.txt/nil>
